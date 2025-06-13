@@ -1,0 +1,317 @@
+body{
+    
+    font-family: sans-serif;
+    background-color: lightgray;
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+
+nav{
+    margin-top: 10px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin: 0 12px;
+    
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: goldenrod;
+}
+
+
+
+/* About Section */
+
+.about-section{
+    background-color: white;
+    margin:40px auto ;
+    padding : 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 700px;
+}
+
+.about-section h2{
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.about-section p{
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 16 px ;
+    color:#555;
+    ;
+    
+}
+
+/*    Contact                 */
+
+
+
+.contact-section{
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    margin: 40px auto;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.contact-section h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color:#333;
+}
+
+.contact-section label{
+    margin: 10px 0 5px; /*  for breathing space*/
+    font-weight: bold;
+    color: #444;
+    display: block;
+}
+
+.contact-form input, 
+.contact-form textarea{
+    width: 350px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;/*  includes padding inside width calculatioin */
+    font-size: 15px;
+}
+.contact-form textarea{
+    resize: vertical;
+}
+
+.contact-form button{
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    padding: 10px 18px;
+    background-color:#333;
+    margin-top: 15px;
+    color: white;
+    font-size: 16px;
+}
+
+.contact-form button:hover{
+ background-color:goldenrod;   
+}
+
+
+
+/*                  login               */
+
+
+
+
+.login-section{
+    background-color: white;
+    max-width: 400px;
+    margin:40px auto;
+    max-width: 400px;
+    padding: 25px;
+    border-radius:10px;
+    box-shadow: 0  2px 20px  rgba(0,0,0,0.1);
+}
+
+.login-section h2{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+
+}
+.login-form label{
+
+    display: block;
+    margin: 10px 0px 5px;
+    color: #444;
+    font-weight:bold;
+}
+
+.login-form input{
+    width:70%;
+    padding: 4px;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+    border-radius: 6px;
+    font-size: 15px;
+
+}
+
+.login-form button{
+    margin-top: 15px;
+    background-color: #333;
+    color:white;
+    padding: 10px 18px;
+    border-radius:6px;
+    font-size: 15px;
+    border:none;
+    cursor: pointer;
+}
+.login-form button:hover{
+    background-color: goldenrod;
+}
+
+/*     sign up  */
+
+.signup-section{
+    background-color: white;
+    max-width: 400px;
+    margin:40px auto;
+    max-width: 400px;
+    padding: 25px;
+    border-radius:10px;
+    box-shadow: 0  2px 20px  rgba(0,0,0,0.1);
+}
+
+.signup-section h2{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+
+}
+.signup-form label{
+
+    display: block;
+    margin: 10px 0px 5px;
+    color: #444;
+    font-weight:bold;
+}
+
+.signup-form input{
+    width:70%;
+    padding: 4px;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+    border-radius: 6px;
+    font-size: 15px;
+
+}
+
+.signup-form button{
+    margin-top: 15px;
+    background-color: #333;
+    color:white;
+    padding: 10px 18px;
+    border-radius:6px;
+    font-size: 15px;
+    border:none;
+    cursor: pointer;
+}
+.signup-form button:hover{
+    background-color: goldenrod;
+}
+
+
+.upload-section button{
+    margin-top: 15px;
+    background-color: #333;
+    color:white;
+    padding: 10px 18px;
+    border-radius:6px;
+    font-size: 15px;
+    border:none;
+    cursor: pointer;
+
+}
+.upload-section button:hover{
+    background-color: goldenrod;
+}
+
+.upload-section input{
+    width:70%;
+    padding: 4px;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+    border-radius: 6px;
+    font-size: 15px;
+
+}
+
+.gallery-section{
+    text-align: center;
+    margin:40px 0;
+}
+.gallery-section h2{
+  font-size: 24px;
+  color:#333;
+  margin-bottom: 30px;
+}
+
+.gallery-grid{
+    display: grid;
+    gap:15px;
+    padding: 0 20px;
+    grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+}
+
+.gallery-grid img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  border:2px solid #ddd;
+  transition: transform 0.3s ease , box-shadow 0.3s ease;
+ }
+
+ .gallery-grid img:hover{
+ 
+ transform:scale(1.03);
+ box-shadow:0 4px 12px rgba(0,0,0,0.2);
+ }
+
+ .logo{
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+    
+ }
+
+ header h1{
+    display: inline;
+    font-size: 28px;
+  }
+
+  .tagline{
+  text-align: center;
+   color: goldenrod;
+   margin-top: 20px;
+   margin-bottom: 30px;
+  }
+
+  .upload-sim{
+      text-align: center;
+      padding: 20px;
+      background-color:#f4f4f4 ;
+      margin: 40px;
+      border-radius: 6px;
+  }
+
+  .upload-sim input[type="file"]{
+     padding: 10px;
+     border-radius:6px ;
+     border: 1px solid #ccc;
+  }
+  .upload-sim p{
+    color: #888;
+    font-size: 16px;
+  }
